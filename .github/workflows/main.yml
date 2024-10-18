@@ -1,6 +1,6 @@
 name: "Latest tag from master branch"
 env:
-  DOCKERHUB_REPOSITORY: serjs/go-socks5-proxy
+  DOCKERHUB_REPOSITORY: wqyjh/go-socks5-proxy
 
 on:
   pull_request:
@@ -37,7 +37,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: serjs/go-socks5-proxy
+          images: wqyjh/go-socks5-proxy
           tags: |
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
             type=ref,event=branch

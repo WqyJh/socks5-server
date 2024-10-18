@@ -1,7 +1,7 @@
 # go-socks5-proxy
 
-![Latest tag from master branch](https://github.com/serjs/socks5-server/workflows/Latest%20tag%20from%20master%20branch/badge.svg)
-![Release tag](https://github.com/serjs/socks5-server/workflows/Release%20tag/badge.svg)
+![Latest tag from master branch](https://github.com/wqyjh/socks5-server/workflows/Latest%20tag%20from%20master%20branch/badge.svg)
+![Release tag](https://github.com/wqyjh/socks5-server/workflows/Release%20tag/badge.svg)
 
 Simple socks5 server using go-socks5 with authentication, allowed ips list and destination FQDNs filtering
 
@@ -9,13 +9,13 @@ Simple socks5 server using go-socks5 with authentication, allowed ips list and d
 
 - Run docker container using default container port 1080 and expose it to world using host port 1080, with auth creds
 
-    ```docker run -d --name socks5 -p 1080:1080 -e PROXY_USER=<PROXY_USER> -e PROXY_PASSWORD=<PROXY_PASSWORD>  serjs/go-socks5-proxy```
+    ```docker run -d --name socks5 -p 1080:1080 -e PROXY_USER=<PROXY_USER> -e PROXY_PASSWORD=<PROXY_PASSWORD>  wqyjh/go-socks5-proxy```
 
     - Leave `PROXY_USER` and `PROXY_PASSWORD` empty for skip authentication options while running socks5 server, see example below
 
 - Run docker container using specifit container port and expose it to host port 1090, without auth creds
 
-    ```docker run -d --name socks5 -p 1090:9090 -e PROXY_PORT=9090 serjs/go-socks5-proxy```
+    ```docker run -d --name socks5 -p 1090:9090 -e PROXY_PORT=9090 wqyjh/go-socks5-proxy```
 
 # List of supported config parameters
 
@@ -56,4 +56,4 @@ or
 
 * **Sergey Bogayrets**
 
-See also the list of [contributors](https://github.com/serjs/socks5-server/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/wqyjh/socks5-server/graphs/contributors) who participated in this project.

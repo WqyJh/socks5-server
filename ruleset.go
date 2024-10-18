@@ -3,7 +3,7 @@ package main
 import (
 	"regexp"
 
-	"github.com/armon/go-socks5"
+	"github.com/things-go/go-socks5"
 	"golang.org/x/net/context"
 )
 
