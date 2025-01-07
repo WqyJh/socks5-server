@@ -6,5 +6,5 @@ require github.com/caarlos0/env/v6 v6.10.1
 
 require (
 	github.com/things-go/go-socks5 v0.0.5
-	golang.org/x/net v0.20.0
+	golang.org/x/net v0.34.0
 )
